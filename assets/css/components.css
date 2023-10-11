@@ -1,0 +1,44 @@
+.primary_button,
+.secondary_button,
+.primary_mobile_button,
+.secondary_mobile_button {
+    font-family: var(--raleway);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--white);
+
+    background: var(--blue);
+    padding: 1.6rem;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    width: 100%;
+}
+
+.primary_button:hover,
+.primary_mobile_button:hover {
+    opacity: .6;
+}
+
+.secondary_button,
+.secondary_mobile_button {
+    color: var(--blue);
+    border: .1rem solid var(--blue);
+    background: none;
+}
+
+.secondary_button:hover,
+.secondary_mobile_button:hover {
+    background: var(--light-blue-200);
+}
+
+
+.primary_mobile_button,
+.secondary_mobile_button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.2rem 1.6rem;
+}

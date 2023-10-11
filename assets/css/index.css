@@ -1,0 +1,67 @@
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    background: var(--white);
+}
+
+.header_box {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+
+.flex_nav,
+.nav_item {
+    display: flex;
+    align-items: center;
+    gap: 3.6rem;
+}
+
+.nav_item {
+    gap: normal;
+}
+
+.nav_item img:first-child {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.nav_item img:last-child {
+    width: 7.2rem;
+}
+
+.h_research_side {
+    position: relative;
+    display: none;
+    align-items: center;
+
+    background: var(--light-gray);
+    border-radius: 2rem;
+    max-width: 27rem;
+}
+
+.h_input {
+    font-family: var(--raleway);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+
+    background: none;
+    outline: none;
+    border: none;
+    padding: 1.2rem 1.6rem;
+    width: 100%;
+
+}
+
+.h_searchIcon {
+    padding: .8rem 1.6rem;
+    cursor: pointer;
+}
+
+/* main */
+
+
+/* footer */

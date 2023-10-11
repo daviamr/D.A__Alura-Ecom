@@ -1,0 +1,39 @@
+/* default import */
+@import './reset.css';
+@import './components.css';
+
+
+/* default presets */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --white: #FFFFFF;
+    --light-blue: #EAF2FD;
+    --light-blue-200: #D4E4FA;
+    --blue: #2A7AE4;
+    --light-gray: #F5F5F5;
+    --dark-gray: #464646;
+    --placeholder: #A2A2A2;
+    --raleway: 'Raleway', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--raleway);
+    background: var(--light-gray);
+}
+
+/* limiter */
+.global_box {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+/**/
+.hide {
+    display: none;
+}
