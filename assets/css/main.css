@@ -28,8 +28,9 @@ body {
 }
 
 /* limiter */
-.global_box {
+.main_global_box {
     max-width: 144rem;
+    padding: 3.2rem;
     margin: 0 auto;
 }
 
