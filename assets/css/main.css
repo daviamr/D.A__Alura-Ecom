@@ -12,12 +12,14 @@
     font-size: 62.5%;
 
     --white: #FFFFFF;
+    --black: #000000;
     --light-blue: #EAF2FD;
     --light-blue-200: #D4E4FA;
     --blue: #2A7AE4;
     --light-gray: #F5F5F5;
     --dark-gray: #464646;
     --placeholder: #A2A2A2;
+    --border: #C8C8C8;
     --raleway: 'Raleway', sans-serif;
 }
 
@@ -34,7 +36,13 @@ body {
     margin: 0 auto;
 }
 
-/**/
-.hide {
-    display: none;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: .4rem;
+    background: var(--light-blue-200);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: .4rem;
 }

@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/index/index.css">
+    <link rel="stylesheet" href="./assets/css/index/responsivity.css">
     <link rel="icon" href="./assets/img/logo/logoIcon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,30 +19,31 @@
     <header>
         <div class="header_box">
             <nav class="flex_nav">
-                <a href="#" class="nav_item">
+                <div class="h-desktop-wrapper">
+                    <a href="#" class="nav_item">
 
-                    <img src="./assets/img/logo/logoIcon.svg" alt="Logo da empresa AluraGeek">
-                    <img src="./assets/img/logo/logoText.svg" alt="Logo da empresa AluraGeek">
+                        <img src="./assets/img/logo/logoIcon.svg" alt="Logo da empresa AluraGeek">
+                        <img src="./assets/img/logo/logoText.svg" alt="Logo da empresa AluraGeek">
 
-                </a>
+                    </a>
+                    <div class="h_research_side">
 
-                <button class="secondary_mobile_button">
+                        <input type="text" placeholder="O que deseja encontrar?" class="h_input">
+                        <img src="./assets/img/icons/searchDesktop.svg" alt="Ícone de buscar" class="h_searchIcon">
+
+                    </div>
+                </div>
+
+                <button class="secondary_mobile_button" id="loginButton">
                     Login
                 </button>
 
-                <a href="#">
+                <a href="#" b class="mobile_search">
 
                     <img src="./assets/img/icons/searchMobile.svg" alt="Ícone de buscar">
 
                 </a>
             </nav>
-            <div class="h_research_side">
-
-                <input type="text" placeholder="O que deseja encontrar?" class="h_input">
-                <img src="./assets/img/icons/searchDesktop.svg" alt="Ícone de buscar" class="h_searchIcon">
-
-            </div>
-
         </div>
 
     </header>
@@ -63,7 +65,7 @@
         <div class="main_global_box">
 
             <article class="article_box">
-                <div>
+                <div class="srAnimation">
                     <div class="flex-category">
                         <h1 class="category_title">
                             Categoria A
@@ -112,7 +114,7 @@
 
                 </div>
 
-                <div>
+                <div class="srAnimation">
 
                     <div class="flex-category">
                         <h1 class="category_title">
@@ -163,7 +165,7 @@
                     </section>
                 </div>
 
-                <div>
+                <div class="srAnimation">
 
                     <div class="flex-category">
                         <h1 class="category_title">
@@ -220,54 +222,74 @@
         </div>
         <div class="faq_box">
 
-            <div>
+            <div class="faq_limiter">
                 <div class="faq_logo_wrapper">
                     <img src="./assets/img/logo/logoIcon.svg" alt="Logo da empresa AluraGeek">
                     <img src="./assets/img/logo/logoText.svg" alt="Logo da empresa AluraGeek">
                 </div>
 
-                <ul>
+                <ul class="flex-list-faq">
                     <li>
-                        <a href="">
+                        <a href="#">
                             Quem somos nós
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Quem somos nós
+                        <a href="#">
+                            Política de privacidade
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Quem somos nós
+                        <a href="#">
+                            Programa fidelidade
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Quem somos nós
+                        <a href="#">
+                            Nossas lojas
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Quem somos nós
+                        <a href="#">
+                            Quero ser franqueado
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            Quem somos nós
+                        <a href="#">
+                            Anuncie aqui
                         </a>
                     </li>
                 </ul>
 
                 <form>
-
+                    <div class="form_content_box">
+                        <legend class="form_legend">Fale conosco</legend>
+                        <label class="flex_label" id="teste2">
+                            Nome
+                            <input type="text" id="teste">
+                        </label>
+                        <textarea class="form_textarea" placeholder="Escreva sua mensagem"></textarea>
+                        <button class="primary_mobile_button">Enviar mensagem</button>
+                    </div>
                 </form>
             </div>
 
         </div>
     </main>
 
+    <footer>
+        <div class="footer_box">
+            <p>Desenvolvido para estudo</p>
+            <a href="https://github.com/daviamr" target="_blank">
+                @daviamr
+            </a>
+        </div>
+    </footer>
+
     <script src="./assets/js/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/indexAnimation.js"></script>
+
 </body>
 
 </html>

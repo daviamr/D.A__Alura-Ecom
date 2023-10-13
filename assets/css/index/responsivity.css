@@ -1,0 +1,49 @@
+@media (min-width: 425px) {
+    .cards_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .header_box {
+        padding: 3.2rem;
+    }
+
+    .flex_nav {
+        justify-content: space-between;
+    }
+
+    .nav_item img:first-child {
+        width: auto;
+        height: auto;
+    }
+
+    .nav_item img:last-child {
+        width: auto;
+    }
+
+    .h-desktop-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 3.2rem;
+
+        flex: 1;
+    }
+
+    .h_research_side {
+        display: flex;
+        flex: 1;
+    }
+
+    .mobile_search {
+        display: none;
+    }
+
+    .cards_section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .secondary_mobile_button {
+        width: auto;
+    }
+}

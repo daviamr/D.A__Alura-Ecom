@@ -142,7 +142,7 @@ header {
     display: block;
     content: '';
 
-    background-image: url(../img/icons/arrow-right.svg);
+    background-image: url(../../img/icons/arrow-right.svg);
     background-position: center;
 
     width: 1.6rem;
@@ -199,17 +199,151 @@ header {
 
 /* FAQ */
 .faq_box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 1.6rem;
+    width: 100%;
     background: var(--light-blue);
 }
 
+.faq_limiter {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    max-width: 144rem;
+    padding: 1.6rem;
+}
+
 .faq_logo_wrapper {
+    justify-content: center;
+}
+
+.faq_logo_wrapper,
+.flex-list-faq {
     display: flex;
     align-items: center;
 }
 
+.flex-list-faq {
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.flex-list-faq a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--dark-gray);
+
+    transition: .3s;
+}
+
+.flex-list-faq li:hover {
+    opacity: .7;
+}
+
+/* form */
+.form_content_box,
+.flex_label {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.form_legend {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--dark-gray);
+}
+
+.flex_label {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: var(--placeholder);
+
+    gap: .4rem;
+    background: var(--white);
+    padding: .8rem 1.2rem;
+
+    border-bottom: .1rem solid var(--border);
+    border-radius: .4rem;
+
+    transition: .3s;
+}
+
+.flex_label input,
+.form_textarea {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    color: var(--dark-gray);
+
+    border: none;
+    outline: none;
+}
+
+.form_textarea {
+    padding: 1.6rem 1.2rem 0;
+    min-height: 8.2rem;
+    max-width: 100%;
+
+    border-bottom: .1rem solid var(--border);
+}
+
+.primary_mobile_button {
+    width: max-content;
+}
+
 /* footer */
+
+.footer_box {
+    text-align: center;
+
+    padding: 3.2rem;
+    background: var(--white);
+}
+
+.footer_box p {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    margin-bottom: .8rem;
+}
+
+.footer_box a {
+    position: relative;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.footer_box a::after {
+    position: absolute;
+    content: '';
+
+    left: -2rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url(../../img/icons/githubIcon.png);
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer_box a:hover {
+    opacity: .7;
+}
+
+/* scroll animation */
+/* .srAnimation {
+    visibility: hidden;
+} */
